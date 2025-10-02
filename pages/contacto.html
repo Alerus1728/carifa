@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carifa</title>
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <!--Inicio de sección superior-->
+        <header>
+            <nav class="navbar navbar-expand-lg" style="background-color:#F5E6D3;">
+                <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/logo.png" alt="Logo de Carifa" class="img-logo">
+                </a>
+
+                <!-- Botón hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas" aria-controls="menuOffcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú normal en pantallas grandes -->
+                <div class="collapse navbar-collapse d-none d-lg-block">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link fw-bold" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="recetas.html">Recetas</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="cafeteras.html">Cafeteras</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="regionesCafeteras.html">Regiones Cafeteras</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+
+            <!-- Menú offcanvas (hamburguesa en móviles) -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="menuOffcanvasLabel">Carifa</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link fw-bold" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="recetas.html">Recetas</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="cafeteras.html">Cafeteras</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="regionesCafeteras.html">Regiones Cafeteras</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="contacto.html">Contacto</a></li>
+                </ul>
+                </div>
+            </div>
+        </header>
+        <main class="">
+            <section class="contacto">
+                <!-- Banner -->
+                <div class="mb-4">
+                    <img src="../assets/banner-index.png" alt="Imagen de contacto" class="banner">
+                </div>
+                <!-- Título y descripción -->
+                <div class="text-center mb-4 my-3 mx-auto" style="max-width: 1000px;">
+                    <h1 class="mb-3">Contacto</h1>
+                    <p class="lead mx-3">
+                        ¿Tienes dudas, consultas o necesitas soporte? Completa el formulario y nuestro equipo se pondrá en contacto contigo lo antes posible.
+                    </p>
+                </div>
+                <!-- Formulario -->
+                <form action="#" method="post" class="p-4 border rounded shadow bg-light  my-5 mx-5">
+                    <div class="row mb-3">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                        <input type="text" name="nombre" class="form-control" placeholder="Nombre" required>
+                        </div>
+                        <div class="col-md-6">
+                        <input type="email" name="email" class="form-control" placeholder="Correo electrónico" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <select name="motivo" class="form-select" required>
+                        <option value="">Selecciona un motivo</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="soporte">Soporte</option>
+                        <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-inicio btn-lg">Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <!--pie de página-->
+        <!--Inicio de pie de página-->
+        <footer>
+            <div class="container">
+                <div class="row align-items-center">
+                <!-- Izquierda -->
+                <div class="col-6 d-flex flex-column align-items-start">
+                    <img src="../assets/logo.png" alt="Logo Carifa" class="logo">
+                    <h6 class="mb-0">Tierra de sabor colombiano</h6>
+                </div>
+
+                <!-- Derecha -->
+                <div class="col-6 d-flex flex-column align-items-end">
+                    <h6 class="mb-2">Nuestras redes</h6>
+                    <ul class="d-flex gap-2 justify-content-end list-unstyled m-0">
+                    <li><a href="#"><img src="../assets/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="../assets/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="../assets/whatsapp.png" alt="Whatsapp"></a></li>
+                    <li><a href="#"><img src="../assets/logotipo-de-gmail.png" alt="Gmail"></a></li>
+                    </ul>
+                </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="row">
+                <div class="col-12 text-center">
+                    <p class="copyright mb-0">&copy; 2025 Carifa. Todos los derechos reservados.</p>
+                </div>
+                </div>
+            </div>
+        </footer>
+        <!--Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>
