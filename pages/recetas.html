@@ -1,178 +1,175 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Carifa</title>
-        <!--Bootstrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
-    <body>
-        <!--Inicio de sección superior-->
-        <header>
-            <nav class="navbar navbar-expand-lg" style="background-color:#F5E6D3;">
-                <div class="container-fluid">
-                <!-- Logo -->
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../assets/logo.png" alt="Logo de Carifa" class="img-logo">
-                </a>
 
-                <!-- Botón hamburguesa -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas" aria-controls="menuOffcanvas">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recetas | Carifa</title>
 
-                <!-- Menú normal en pantallas grandes -->
-                <div class="collapse navbar-collapse d-none d-lg-block">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link fw-bold" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold" href="recetas.html">Recetas</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold" href="cafeteras.html">Cafeteras</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold" href="regionesCafeteras.html">Regiones Cafeteras</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold" href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-                </div>
-            </nav>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!--  CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
 
-            <!-- Menú offcanvas (hamburguesa en móviles) -->
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel">
-                <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="menuOffcanvasLabel">Carifa</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
-                </div>
-                <div class="offcanvas-body">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link fw-bold" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold" href="recetas.html">Recetas</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold" href="cafeteras.html">Cafeteras</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold" href="regionesCafeteras.html">Regiones Cafeteras</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold" href="contacto.html">Contacto</a></li>
-                </ul>
-                </div>
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="../index.html">
+          <img src="../assets/logo.png" alt="Logo de Carifa" class="img-logo">
+        </a>
+
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas"
+          aria-controls="menuOffcanvas">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú normal -->
+        <div class="collapse navbar-collapse d-none d-lg-block">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link fw-bold" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold" href="recetas.html">Recetas</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold" href="cafeteras.html">Cafeteras</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold" href="regionesCafeteras.html">Regiones Cafeteras</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menú offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel">
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title" id="menuOffcanvasLabel">Carifa</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link fw-bold" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="recetas.html">Recetas</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="cafeteras.html">Cafeteras</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="regionesCafeteras.html">Regiones Cafeteras</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="py-4">
+    <!-- Título principal -->
+    <h1 class="text-center mb-4">Recetas</h1>
+
+    <!-- Filtros -->
+    <section class="filters container mb-4">
+        <form>
+            <input type="text" placeholder="Buscar receta..." />
+            
+            <select>
+                <option>Tipo de cafetera</option>
+                <option>Espresso</option>
+                <option>Prensa francesa</option>
+                <option>Italiana</option>
+            </select>
+            
+            <select>
+                <option>Tiempo de elaboración</option>
+                <option>Rápido (5 min)</option>
+                <option>Medio (10-15 min)</option>
+                <option>Lento (20+ min)</option>
+            </select>
+            
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
+
+    <!-- Cards de recetas -->
+    <section class="container">
+      <h2 class="mb-3">Nuestras recetas destacadas</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card text-center">
+            <img src="../assets/avena-trasnochada.png" class="card-img-top" alt="Avena trasnochada">
+            <div class="card-body">
+              <h3 class="card-title">Café 1</h3>
+              <p>Una mezcla nutritiva con el sabor de la avena, pensada para acompañar tus mañanas.</p>
+              <a href="#" class="btn btn-inicio btn-sm">Conocer más</a>
             </div>
-        </header>
-        <!--Fin de sección superior-->
-        <!--contenido principal-->
-        <main class="py-4">
-            <!-- Título -->
-            <h1 class="text-center mb-4">Recetas</h1>
-            <!-- Filtros -->
-            <section class="filters container mb-4">
-            <form class="row g-2 align-items-center">
-                <!-- Campo de búsqueda -->
-                <div class="col-md">
-                <label for="search-input" class="form-label visually-hidden">Buscar receta</label>
-                <input type="text" id="search-input" name="busqueda" placeholder="Buscar receta..." class="form-control">
-                </div>
+          </div>
+        </div>
 
-                <!-- Filtro por cafetera -->
-                <div class="col-md">
-                <label for="cafetera" class="form-label visually-hidden">Tipo de cafetera</label>
-                <select id="cafetera" name="cafetera" class="form-select">
-                    <option value="">Tipo de cafetera</option>
-                    <option value="opcion1">Opción 1</option>
-                    <option value="opcion2">Opción 2</option>
-                    <option value="opcion3">Opción 3</option>
-                </select>
-                </div>
-
-                <!-- Filtro por tiempo -->
-                <div class="col-md">
-                <label for="tiempo" class="form-label visually-hidden">Tiempo de elaboración</label>
-                <select id="tiempo" name="tiempo" class="form-select">
-                    <option value="">Tiempo de elaboración</option>
-                    <option value="opcion1">Opción 1</option>
-                    <option value="opcion2">Opción 2</option>
-                    <option value="opcion3">Opción 3</option>
-                </select>
-                </div>
-
-                <!-- Botón -->
-                <div class="col-auto">
-                <button type="submit" class="btn btn-inicio h-100">Buscar</button>
-                </div>
-            </form>
-            </section>
-
-            <!-- Cards -->
-            <section class="container">
-                <div class="row g-4">
-                <div class="col-3">
-                    <div class="card text-center">
-                    <img src="../assets/avena-trasnochada.png" class="card-img-top" alt="Avena trasnochada">
-                    <div class="card-body">
-                        <h5 class="card-title">Café 1</h5>
-                        <p class="card-text">Una mezcla nutritiva con el sabor único de la avena, pensada para acompañar todas tus mañanas.</p>
-                        <a href="#" class="btn btn-inicio btn-sm">Conocer más</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card text-center">
-                    <img src="../assets/cafe-infusionado.png" class="card-img-top" alt="Café infusionado">
-                    <div class="card-body">
-                        <h5 class="card-title">Café 2</h5>
-                        <p class="card-text">Café de esencia intensa preparado con técnica de infusión lenta, resaltando cada nota aromática.</p>
-                        <a href="#" class="btn btn-inicio btn-sm">Conocer más</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-3 ">
-                    <div class="card text-center">
-                    <img src="../assets/cremoso-caramelo.png" class="card-img-top" alt="Cremoso caramelo">
-                    <div class="card-body">
-                        <h5 class="card-title">Café 3</h5>
-                        <p class="card-text">Dulce y aterciopelado, este café con notas de caramelo es ideal para quienes buscan suavidad.</p>
-                        <a href="#" class="btn btn-inicio btn-sm">Conocer más</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card text-center">
-                    <img src="../assets/avena-trasnochada.png" class="card-img-top" alt="Avena trasnochada">
-                    <div class="card-body">
-                        <h5 class="card-title">Café 4</h5>
-                        <p class="card-text">Combinación perfecta entre tradición y nutrición: avena cremosa con el carácter del café colombiano.</p>
-                        <a href="#" class="btn btn-inicio btn-sm">Conocer más</a>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </section>
-        </main>
-        <!--Inicio de pie de página-->
-        <footer>
-            <div class="container">
-                <div class="row align-items-center">
-                <!-- Izquierda -->
-                <div class="col-6 d-flex flex-column align-items-start">
-                    <img src="../assets/logo.png" alt="Logo Carifa" class="logo">
-                    <h6 class="mb-0">Tierra de sabor colombiano</h6>
-                </div>
-
-                <!-- Derecha -->
-                <div class="col-6 d-flex flex-column align-items-end">
-                    <h6 class="mb-2">Nuestras redes</h6>
-                    <ul class="d-flex gap-2 justify-content-end list-unstyled m-0">
-                    <li><a href="#"><img src="../assets/facebook.png" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="../assets/instagram.png" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="../assets/whatsapp.png" alt="Whatsapp"></a></li>
-                    <li><a href="#"><img src="../assets/logotipo-de-gmail.png" alt="Gmail"></a></li>
-                    </ul>
-                </div>
-                </div>
-
-                <!-- Copyright -->
-                <div class="row">
-                <div class="col-12 text-center">
-                    <p class="copyright mb-0">&copy; 2025 Carifa. Todos los derechos reservados.</p>
-                </div>
-                </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card text-center">
+            <img src="../assets/cafe-infusionado.png" class="card-img-top" alt="Café infusionado">
+            <div class="card-body">
+              <h3 class="card-title">Café 2</h3>
+              <p>Café intenso preparado con técnica de infusión lenta, resaltando cada nota aromática.</p>
+              <a href="#" class="btn btn-inicio btn-sm">Conocer más</a>
             </div>
-        </footer>
-        <!--Bootstrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    </body>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card text-center">
+            <img src="../assets/cremoso-caramelo.png" class="card-img-top" alt="Cremoso caramelo">
+            <div class="card-body">
+              <h3 class="card-title">Café 3</h3>
+              <p>Dulce y aterciopelado, este café con notas de caramelo es ideal para quienes buscan suavidad.</p>
+              <a href="#" class="btn btn-inicio btn-sm">Conocer más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card text-center">
+            <img src="../assets/avena-trasnochada.png" class="card-img-top" alt="Avena trasnochada">
+            <div class="card-body">
+              <h3 class="card-title">Café 4</h3>
+              <p >Combinación entre tradición y nutrición: avena cremosa con el carácter del café colombiano.</p>
+              <a href="#" class="btn btn-inicio btn-sm">Conocer más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-6 d-flex flex-column align-items-start">
+          <img src="../assets/logo.png" alt="Logo Carifa" class="logo">
+          <p class="mb-0"><strong>Tierra de sabor colombiano</strong></p>
+        </div>
+
+        <div class="col-6 d-flex flex-column align-items-end">
+          <p class="mb-2"><strong>Nuestras redes</strong></p>
+          <ul class="d-flex gap-2 justify-content-end list-unstyled m-0">
+            <li><a href="#"><img src="../assets/facebook.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="../assets/instagram.png" alt="Instagram"></a></li>
+            <li><a href="#"><img src="../assets/whatsapp.png" alt="Whatsapp"></a></li>
+            <li><a href="#"><img src="../assets/logotipo-de-gmail.png" alt="Gmail"></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="copyright mb-0">&copy; 2025 Carifa. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
 </html>

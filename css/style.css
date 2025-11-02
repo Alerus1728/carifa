@@ -2,86 +2,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
 
 /* GENERAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background-color: #FAF7F2;
   font-family: "Playfair Display", serif;
+  color: #4B2E20;
+  overflow-x: hidden; /* evita scroll lateral */
 }
 
 /* TITULOS */
 h1 {
-  font-size: 3.0rem;
+  font-size: 3rem;
   text-align: center;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  font-weight: 700;
+  margin: 2rem 0;
 }
+
 h2 {
   font-size: 2.25rem;
-  text-align: start;
-  font-weight: bold;
+  text-align: left;
+  font-weight: 700;
+  margin: 1.5rem 0;
 }
 
 h3 {
-  font-size: 1.75rem;
-  text-align: start;
-  font-weight: 500; 
-}
-h6{
-  font-size: 1.25rem;
-  text-align: start;
-  font-weight: normal; 
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem 0;
 }
 
 /* HEADER */
 header {
   background-color: #F5E6D3;
-  text-align: center; 
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.bg-encabezado {
+  background-color: #F5E6D3;
+}
+
+.nav-carifa {
+  font-family: "Playfair Display", serif;
+  color: #4B2E20;
+  padding: 0.8rem 1rem;
 }
 
 .img-logo {
   height: 100px;
   display: block;
+  margin: 0 auto;
 }
 
-header nav ul {
+nav ul {
   list-style: none;
-  display: inline-block; 
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
-header nav ul li a {
+nav a {
   text-decoration: none;
   font-size: 1.25rem;
   color: #4B2E20;
   font-weight: bold;
+  transition: color 0.2s ease;
 }
 
-/* MAIN */
-.banner{
-  width: 100%;
-  height: auto;
+nav a:hover,
+nav a.active {
+  color: #2E1B12;
 }
 
-.btn-inicio{
-  font-size: 0.875rem;
-  font-family: "Playfair Display", serif;
+/* BANNER */
+.banner { 
+  width: 100%; 
+  height: auto; 
+}
+
+
+
+/* BOTONES */
+.btn-inicio {
+  font-size: 0.9rem;
   font-weight: bold;
   color: #4B2E20;
   background-color: #F5E6D3;
   border: 2px solid #4B2E20;
   border-radius: 8px;
-  display: block;
+  display: inline-block;
   padding: 0.5rem 1.7rem;
+  margin: 1rem auto;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
+.btn-inicio:hover {
+  background-color: #EBD8C2;
+  transform: scale(1.05);
+}
+
+/* CARDS */
 .cards {
-  text-align: center; /* centra el contenedor */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .card {
   background-color: #F5E6D3;
   width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card img {
@@ -89,6 +136,13 @@ header nav ul li a {
   height: auto;
 }
 
+.card p {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+}
+
+/* BOTÓN EN CARD */
 .boton-card button {
   font-size: 0.875rem;
   font-family: "Playfair Display", serif;
@@ -97,64 +151,160 @@ header nav ul li a {
   background-color: #F5E6D3;
   border: 2px solid #4B2E20;
   border-radius: 8px;
-  display: block;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  transition: background 0.2s ease;
 }
-p{
-  text-align: left;
-  font-family:Arial, Helvetica, sans-serif;
+
+.boton-card button:hover {
+  background-color: #EBD8C2;
 }
-footer section p{
-  text-align: center;
-  font-family:Arial, Helvetica, sans-serif;
+
+/* FORMULARIO DE FILTROS */
+.filters form {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 900px; 
+  margin: 0 auto; 
 }
-/* Recetas*/
-.filters{
-  font-family:Arial, Helvetica, sans-serif;
+
+.filters input[type="text"],
+.filters select {
+  flex: 1;
+  min-width: 220px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1.5px solid #4a3c2e;
+  border-radius: 8px;
+  background-color: #fff;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
 }
-/*Cafeteras*/
-.cafetera img{
-  width: 250px;
-  height: auto;
+
+.filters button {
+  background-color: #f2e4d4;
+  color: #3c2c1e;
+  font-weight: bold;
+  border: 1.5px solid #4a3c2e;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.cafetera{
+
+.filters button:hover {
+  background-color: #e9d5b9;
+  transform: scale(1.05);
+}
+
+/* SECCIONES DE CAFETERAS */
+.cafetera-back {
+  background-color: #FAF7F2;
+  border-radius: 10px;
+  padding: 2rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.cafetera-back:hover {
+  transform: translateY(-5px);
+}
+
+/* FORMULARIO DE CONTACTO */
+.form-contacto {
+  max-width: 800px;
+  margin: 3rem auto;
+  background-color: #fff;
+  border: 1.5px solid #d4c3af;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-contacto input,
+.form-contacto select,
+.form-contacto textarea {
+  font-family: 'Playfair Display', serif;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1.5px solid #4B2E20;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Inputs en línea */
+.form-contacto .input-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-contacto .input-row input,
+.form-contacto .input-row select {
+  flex: 1;
+}
+
+/* BOTÓN DE FORMULARIO */
+.form-contacto button {
   background-color: #F5E6D3;
+  color: #4B2E20;
+  border: 1.5px solid #4B2E20;
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
 }
-/*regiones*/
-.regiones img{
-  height: 900px;
-  width: auto;
+
+.form-contacto button:hover {
+  background-color: #EBD8C2;
+  transform: scale(1.05);
 }
-.contacto p{
-  font-family:Arial, Helvetica, sans-serif;
-}
-.contacto form{
-  font-family:Arial, Helvetica, sans-serif;
-}
-/* FOOTER */
+
 /* FOOTER */
 footer {
   background-color: #F5E6D3;
   border-top: 1px solid #ccc;
-  padding: 20px 0;
+  padding: 2rem 1rem;
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Logo */
 footer .logo {
-  max-height: 120px; 
-  height: auto;
+  max-height: 120px;
   margin-bottom: 10px;
 }
 
-/* Títulos y texto */
-footer h6,
-footer p {
+footer .slogan {
   font-size: 14px;
-  margin: 0;
   color: #4B2E20;
 }
 
-/* Íconos sociales */
+footer p {
+  font-size: 14px;
+  margin: 0.5rem 0;
+  color: #4B2E20;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 0;
+}
+
 footer ul li a img {
   width: 24px;
   height: auto;
@@ -165,44 +315,84 @@ footer ul li a img:hover {
   transform: scale(1.1);
 }
 
-/* Copyright */
 footer .copyright {
-  text-align: center;
-  width: 100%;
-  margin-top: 15px;
+  margin-top: 10px;
   font-size: 13px;
-  color: #333;
+  color: #4B2E20;
 }
 
-
-/*CARRUSEL*/
-
+/* CARRUSEL */
 #recetasCarousel .carousel-control-prev {
-  left: -40px; 
+  left: -40px;
 }
 
 #recetasCarousel .carousel-control-next {
-  right: -40px; 
+  right: -40px;
 }
 
 #recetasCarousel .carousel-control-prev-icon,
 #recetasCarousel .carousel-control-next-icon,
-#recetasCarousel .carousel-indicators{
+#recetasCarousel .carousel-indicators {
   filter: invert(1);
 }
+
 #recetasCarousel .carousel-indicators {
   position: absolute;
-  bottom: -40px; 
+  bottom: -40px;
 }
-/*CAFEREAS*/
-.img-full{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  padding: 0;
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+
+  .cards {
+    justify-content: center; 
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 1rem; 
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .img-logo {
+    height: 80px;
+  }
+
+  .filters form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-contacto .input-row {
+    flex-direction: column;
+  }
+
+  footer ul {
+    flex-wrap: wrap;
+  }
 }
-.cafetera-back{
-  background-color: #F5E6D3 ;
-  border-radius: 8px;
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .btn-inicio {
+    width: 100%;
+  }
+
 }
